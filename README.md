@@ -8,9 +8,9 @@
 
 ![Image Text](https://raw.githubusercontent.com/Aaaaaaaahmat/androidLearning-java/main/ResultScreenshot/lab02.png)
 
-![Image Text](https://github.com/Aaaaaaaahmat/androidLearning-java/blob/main/ResultScreenshot/lab02-3.png)
+![Image Text](https://raw.githubusercontent.com/Aaaaaaaahmat/androidLearning-java/main/ResultScreenshot/lab02-3.png)
 
-![Image Text](https://github.com/Aaaaaaaahmat/androidLearning-java/blob/main/ResultScreenshot/lab02-2.png)
+![Image Text](https://raw.githubusercontent.com/Aaaaaaaahmat/androidLearning-java/main/ResultScreenshot/lab02-2.png)
 
 
 ### Lab01 - 2021/03/10
