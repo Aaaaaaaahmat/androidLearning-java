@@ -8,51 +8,36 @@
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="32dp"
-        android:onClick="countUp"
-        android:text="@string/button_label_count"
-        app:backgroundTint="#DF223E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_zero" />
-
-    <Button
-        android:id="@+id/button_zero"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:alpha="1"
-        android:onClick="zero"
-        android:text="@string/button_label_zero"
-        android:textColor="#FFEB3B"
-        app:backgroundTint="@android:color/darker_gray"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_count"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#00FFFFFF" />
-
-
-    <Button
-        android:id="@+id/button_toast"
-        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:onClick="showToast"
-        android:text="@string/button_label_toast"
-        android:visibility="visible"
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        android:textSize="60sp"
         app:backgroundTint="#DF223E"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_toast"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:onClick="showToast"
+        android:text="@string/button_label_toast"
+        android:textSize="60sp"
+        android:visibility="visible"
+        app:backgroundTint="#DF223E"
+        app:layout_constraintEnd_toStartOf="@+id/button_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,10 +47,10 @@
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="32dp"
         android:background="#009688"
         android:ellipsize="none"
         android:gravity="center"
@@ -74,10 +59,10 @@
         android:textColor="#FFEB3B"
         android:textSize="160sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_toast"
+        app:layout_constraintTop_toBottomOf="@+id/button_count"
         tools:text="0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
