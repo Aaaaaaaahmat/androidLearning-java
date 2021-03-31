@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,10 +14,15 @@ import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
     private int mCount = 0;
     private int zeroAlpha = 100;
     private TextView mShowCount;
+
+    public static final String EXTRA_MESSAGE = "com.example.android.myapplication.extra.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void showToast(View view) {
         Toast.makeText(this,R.string.toast_message, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, HelloActivity.class);
+        String message = mShowCount.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
     public void countUp(View view) {
