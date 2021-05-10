@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Mon May 10 19:53:37 CST 2021
+0.baseType=DIRECTORY
+0.base=/Users/myaccount/gitDemo/androidLearning/androidLearning-java/MaterialMe-Starter/app/build/intermediates/transforms/dexMerger/debug/0
+0.path=classes.dex
+0.set=DEX
+count=1
